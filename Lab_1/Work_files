@@ -1,0 +1,25 @@
+mkdir Work
+mkdir "Лабораторная работа №1!"
+mv "Лабораторная работа №1!"  "Work"
+mkdir "Gerasimovich Nikita Ivanovich"
+mv "Gerasimovich Nikita Ivanovich" "Work"
+cd Work
+chmod 772 'Лабораторная работа №1!'
+chmod 277 'Gerasimovich Nikita Ivanovich'
+touch 'Text @1'
+touch 'Text $2'
+touch 'Text #3'
+printf "Птица говорун отличается умом и сообразительностью! %s\n Отличается умом, отличается сообразительностью..."> "Text @1"
+cat "Text @1" > 'Text $2'
+mv 'Text $2' "Лабораторная работа №1!"
+cp 'Text @1' 'Gerasimovich Nikita Ivanovich'
+gzip 'Text @1' 'Text #3'
+tar -cf 'MyAchiv' 'Text @1'.gz 'Text #3'.gz
+head -n 1 'Text @1'.gz > 'Text #3'.gz
+printf "Будь осторожен! Преступник вооружен!"> "Text #3".gz
+echo "Будь осторожен! Преступник вооружен!" >> 'Text #3'.gz
+tac 'Text @1'.gz > 'Gerasimovich Nikita Ivanovich'/'Result_one'
+mv 'Gerasimovich Nikita Ivanovich'/'Result_one' 'Gerasimovich Nikita Ivanovich'/'Result_two'
+cp 'Gerasimovich Nikita Ivanovich'/'Text @1' 'Лабораторная работа №1!'/'Result_3'
+date>> 'Лабораторная работа №1!'/'Result_3'
+cat /proc/cpuinfo >> 'Лабораторная работа №1!'/'Result_3'
